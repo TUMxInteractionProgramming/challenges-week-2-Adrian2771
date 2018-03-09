@@ -1,0 +1,126 @@
+/* Global */
+
+/* #2 #colorful #palette is inherited from the previous challenge:
+  * Background: #F5F5F5 (GREY 100)
+  * Primary Text: black
+
+  * Primary color: #3F51B5 (INDIGO)
+  * Primary color_text : white
+  * Accent color: #CDDC39 (LIME)
+  * Accent color_text: black
+  */
+
+* {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	/* reset the browser default values for margin & padding */
+	margin:0;
+	padding:0;
+}
+
+body {
+	/* the so-called gray background */
+	background-color: #F5F5F5;
+}
+
+button {
+	background-color: #CDDC39;
+	color: black;
+}
+
+a{
+	color: black;
+}
+
+button, strong{
+	text-transform: uppercase;
+}
+
+/* App bar */
+
+h1 {
+	background-color: #3F51B5;
+	color: white;
+}
+
+/* Channels list */
+
+ul {
+  list-style-type: none;
+  background-color: white;
+}
+
+ul li{
+	padding:16px;
+	font-size:16px;
+	box-sizing:border-box;
+	border-right:1px solid lavender;
+	border-bottom:1px solid lavender;
+}
+
+ul li img{
+	vertical-align:middle;
+}
+/* selecting the current channel */
+ul li:nth-of-type(2){
+	border-left:4px solid #3F51B5;
+	color: #3F51B5;
+}
+/* Tab bar */
+
+#button-container{
+	/* I suspect a lot of redundancy here and below, but I am too tired to check and clean */
+	background-color:white;
+	width:80%;
+}
+
+#button-container button{
+	background-color:white;
+	border:none;
+	font-size:13px;
+	height:72px;
+	width:33%;
+	padding:16px;
+}
+
+#button-container button img{
+	display:block;
+	margin:0 auto 4px;
+}
+
+#button-container button.selected{
+	border-bottom:4px solid #3F51B5;
+}
+
+/* Messages */
+.message{
+	width:80%;
+	background-color:white;
+	margin-bottom:8px;
+	margin-left:2.5%;
+}
+
+.message h3{
+	font-size: medium;
+}
+.message p{
+	background-color: white;
+	padding:16px;
+}
+
+.message button{
+	background-color: #CDDC39;
+	color:black;
+}
+
+.message em{
+	font-size: larger;
+    font-style: normal;
+}
+
+.message h3 a{
+	color:black;
+}
+
+.own-message{
+	margin-left:17.5%;
+}
